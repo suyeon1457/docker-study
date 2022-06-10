@@ -1,0 +1,10 @@
+version: '0.1'
+services:
+  express:
+    build: ./
+    container_name: express
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - "4887:4887"
